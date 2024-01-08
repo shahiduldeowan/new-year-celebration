@@ -267,6 +267,11 @@ header .banner-text-container h3 {
 
 }
 
+/* Our awesome portfolio section */
+#awesome-portfolio-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
 
 /* Footer Section */
 footer {

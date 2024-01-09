@@ -343,7 +343,6 @@ header .banner-text-container h3 {
     height: 456px;
     margin: 80px auto;
     text-align: center;
-    border: #F00 solid 3px;
 }
 
 #subscribe-newsletter-section .subscribe-newsletter-container img {
@@ -367,97 +366,108 @@ header .banner-text-container h3 {
     margin-bottom: 48px;
 }
 
-/* #subscribe-newsletter-section .subscribe-container {
-    display: flex;
-    align-items: center;
-} */
-
-/* #subscribe-newsletter-section .subscribe-container input[type='email'] {
-    color: rgba(7, 2, 17, 0.30);
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    text-align: start;
+#subscribe-newsletter-section .subscribe-container input[type='email'] {
+    /* color: rgba(7, 2, 17, 0.30); */
+    outline: none;
+    border: none;
+    height: 72px;
+    width: 438px;
+    border-radius: 50px 0 0 50px;
+    padding: 0 30px;
     font-size: 18px;
     font-weight: 400;
-} */
-
-.subscribe-container {
-    display: flex;
-    /* Arrange elements horizontally */
-    align-items: center;
-    /* Vertically align elements */
-    margin: 20px auto;
-    /* Center the container */
-    padding: 15px;
-    border: 1px solid #ccc;
-    /* Add a border */
-    border-radius: 5px;
-    /* Rounded corners */
-    background-color: #f0f0f0;
-    /* Light gray background */
 }
 
-.subscribe-container input[type="email"],
-.subscribe-container button {
+#subscribe-newsletter-section .subscribe-container input[type='submit'] {
+    position: relative;
+    left: -5px;
+    background: #f00;
+    color: #fff;
+    outline: none;
     border: none;
-    border-radius: 5px;
-    /* Match the container's rounded corners */
-    padding: 10px 15px;
-    font-size: 16px;
-}
-
-.subscribe-container input[type="email"] {
-    flex-grow: 1;
-    /* Allow email field to expand */
-    margin-right: 10px;
-    /* Add spacing between fields */
-}
-
-.subscribe-container button {
-    background-color: #007bff;
-    /* Blue background for button */
-    color: #fff;
-    /* White text on button */
+    height: 72px;
+    width: 210px;
+    border-radius: 0 50px 50px 0;
     cursor: pointer;
-    /* Visually indicate clickability */
-}
-
-/* Hover effect for button (optional) */
-.subscribe-container button:hover {
-    background-color: #0062cc;
-    /* Slightly darker on hover */
-}
-
-
-#subscribe-newsletter-section .subscribe-container input[type='button'] {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background: #F00;
-    color: #fff;
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
-    text-align: center;
 }
 
-#subscribe-newsletter-section .subscribe-container input {
-    border: none;
-
-    padding: 20px 30px;
-    margin: 0;
-    font-size: 15px;
-}
-
-/* #subscribe-newsletter-section .subscribe-newsletter-container .input-container {
-    width: 49.09%;
-    max-width: 648px;
-    display: flex;
-    background-color: #F00;
-} */
 
 /* Footer Section */
 footer {
     width: 100%;
     height: 609px;
     background: #070211;
+    display: flex;
+    align-items: center;
+}
+
+
+footer .footer-container {
+    width: 82.5%;
+    max-width: 1320px;
+    height: 489px;
+    margin: 120px auto;
+}
+
+footer h3 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer .text-line-height {
+    line-height: 40px;
+}
+
+footer .footer-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-header-container {
+    margin-bottom: 50px;
+}
+
+footer .location-container {
+    width: 375px;
+}
+
+footer .contact-flex-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer .contact-flex-container img {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+footer hr {
+    border: rgba(255, 255, 255, 0.15) solid 1px;
+}
+
+footer .footer-social-links-container {
+    margin: 48px auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+footer .footer-social-links-container img {
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+}
+
+footer .footer-bottom-container {
+    margin-top: 50px;
+}
+
+footer .footer-container .footer-bottom-container .unsubscribe-text {
+    cursor: pointer;
 }

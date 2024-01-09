@@ -268,10 +268,192 @@ header .banner-text-container h3 {
 }
 
 /* Our awesome portfolio section */
+#awesome-portfolio-section {
+    width: 100%;
+    max-width: 1320px;
+}
+
+#awesome-portfolio-section .awesome-portfolio-text-container {
+    width: 67.87%;
+    max-width: 896px;
+    margin-bottom: 48px;
+}
+
 #awesome-portfolio-section h2 {
     font-size: 24px;
     font-weight: 500;
+    margin-bottom: 16px;
 }
+
+#awesome-portfolio-section h3 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #070211;
+    margin-bottom: 22px;
+}
+
+#awesome-portfolio-section p {
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#awesome-portfolio-section .awesome-portfolio-grid-container .row-bottom-margin {
+    margin-bottom: 24px;
+}
+
+#awesome-portfolio-section .awesome-portfolio-grid-container .awesome-portfolio-grid-container-row {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+#awesome-portfolio-section .awesome-portfolio-grid-container .row-item-container {
+    height: 450px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#awesome-portfolio-section .awesome-portfolio-grid-container .row-item-container:hover {
+    transform: scale(1.05);
+}
+
+#awesome-portfolio-section .awesome-portfolio-grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* Subscribe Newsletter Section */
+#subscribe-newsletter-section {
+    width: 100%;
+    max-width: 1320px;
+    height: 616px;
+    background: rgba(255, 0, 0, 0.05);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#subscribe-newsletter-section .subscribe-newsletter-container {
+    width: 67.87%;
+    max-width: 896px;
+    height: 456px;
+    margin: 80px auto;
+    text-align: center;
+    border: #F00 solid 3px;
+}
+
+#subscribe-newsletter-section .subscribe-newsletter-container img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+#subscribe-newsletter-section .subscribe-newsletter-container h2 {
+    color: #070211;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+#subscribe-newsletter-section .subscribe-newsletter-container p {
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+/* #subscribe-newsletter-section .subscribe-container {
+    display: flex;
+    align-items: center;
+} */
+
+/* #subscribe-newsletter-section .subscribe-container input[type='email'] {
+    color: rgba(7, 2, 17, 0.30);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 400;
+} */
+
+.subscribe-container {
+    display: flex;
+    /* Arrange elements horizontally */
+    align-items: center;
+    /* Vertically align elements */
+    margin: 20px auto;
+    /* Center the container */
+    padding: 15px;
+    border: 1px solid #ccc;
+    /* Add a border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #f0f0f0;
+    /* Light gray background */
+}
+
+.subscribe-container input[type="email"],
+.subscribe-container button {
+    border: none;
+    border-radius: 5px;
+    /* Match the container's rounded corners */
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.subscribe-container input[type="email"] {
+    flex-grow: 1;
+    /* Allow email field to expand */
+    margin-right: 10px;
+    /* Add spacing between fields */
+}
+
+.subscribe-container button {
+    background-color: #007bff;
+    /* Blue background for button */
+    color: #fff;
+    /* White text on button */
+    cursor: pointer;
+    /* Visually indicate clickability */
+}
+
+/* Hover effect for button (optional) */
+.subscribe-container button:hover {
+    background-color: #0062cc;
+    /* Slightly darker on hover */
+}
+
+
+#subscribe-newsletter-section .subscribe-container input[type='button'] {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: #F00;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#subscribe-newsletter-section .subscribe-container input {
+    border: none;
+
+    padding: 20px 30px;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* #subscribe-newsletter-section .subscribe-newsletter-container .input-container {
+    width: 49.09%;
+    max-width: 648px;
+    display: flex;
+    background-color: #F00;
+} */
 
 /* Footer Section */
 footer {
